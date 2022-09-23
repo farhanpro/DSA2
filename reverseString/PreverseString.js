@@ -1,10 +1,11 @@
 let names = "Farhan";
 let names2 = names.length-1;
 
+
 const Reverser =()=>
 {
   Backward = [];
-  for(i=names2;i>=0;i--)
+  for(i=names.length;i>=0;i--)
   {
     Backward.push(names[i]);
    
