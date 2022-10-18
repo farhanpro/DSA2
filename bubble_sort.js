@@ -1,44 +1,20 @@
-
-let arr = [12,1,43,13,33,02,92,91];
-let arr2 = [1,32,14,54,24,11];
-let i=0;
-let j=0;
-let arrItem = arr[i];
-let arrItem2 = arr2[j];
-
-
-
-
-
-
-for(let i=0;i<arr2.length;i++)
+let arr =[10,9,11,20,32,54,32,11,5,14,22,31,42];
+function bubblesort(arr)
 {
-    for(let j =0;j<arr2.length;j++)
+    let temp = 0;
+    for(let i=0;i<arr.length;i++)
     {
-        if(arr2[i] > arr2[i+j])
+        for(let j=0;j<arr.length;j++)
         {
-            let temp = 0;
-            temp = arr2[i];
-            arr2[i] = arr2[i+j];
-            arr2[i+j] = temp;
+            if(arr[i] > arr[i + j])
+            {
+                temp = arr[i];
+                arr[i] = arr[i+j];
+                arr[i+j] = temp;
+            }
         }
     }
+    return arr;
 }
 
-for(let i=0;i<arr.length;i++)
-{
-    for(let j =0;j<arr.length;j++)
-    {
-        if(arr[i] > arr[i+j])
-        {
-            let temp = 0;
-            temp = arr[i];
-            arr[i] = arr[i+j];
-            arr[i+j] = temp;
-        }
-    }
-}
-
-
-console.log(arr);
-console.log(arr2);
+console.log(bubblesort(arr));

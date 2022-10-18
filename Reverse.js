@@ -1,7 +1,15 @@
-const name = "farhan";
-let backward =[];
-for(let i = name.length;i>=0;i--)
+let names = "farhan";
+
+function Reverser(name)
 {
+    let backward = [];
+for(i=name.length;i>=0;i--)
+{
+    
     backward.push(name[i]);
+    
 }
-console.log(backward.join(''));
+return backward.join("");
+}
+
+console.log(Reverser(names));
